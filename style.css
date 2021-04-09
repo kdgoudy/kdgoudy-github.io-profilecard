@@ -1,1 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
+:root {
+    --Darkcyan: hsl(185, 75%, 39%);
+    --Darkblue: hsl(229, 23%, 23%);
+    --Darkgrayishblue: hsl(227, 10%, 46%);
+    --Darkgray: hsl(0, 0%, 59%);
+}
+body {
+    background: url(../images/bg-pattern-top.svg) no-repeat, url(../images/bg-pattern-bottom.svg) no-repeat;
+    background-position: 110% -600px, 0% 370px;
+    background-color:var(--Darkcyan);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px !important;
+}
+p {
+    display: inline-block;
+    line-height: 1.5rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+hr {
+    margin-bottom: 1rem;
+    border: 1px solid white;
+}
+.card {
+    width: 20rem;
+    height: 100px;
+    line-height: 4rem;
+    white-space: nowrap;
+    margin: 40% auto;
+}
+.imgcontainer {
+    background: url(../images/bg-pattern-card.svg);
+    padding-top: 2.5rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 30px 30px 30px hsla(0, 0%, 7%, 0.363);
+}
+.imgvictor {
+    display: block;
+    border-radius: 50px;
+    margin: 0 auto;
+    border: 4px solid white;
+    position: relative;
+    top: 50px;
+}
+.information {
+    line-height: 2rem;
+    display: block;
+}
+.text {
+    background: #ffff;
+    text-align: center;
+    padding-top: 4rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 30px 30px 30px hsla(0, 0%, 7%, 0.363);
+}
+.name {
+    color: var(--Darkblue);
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.age, .city, span {
+    color: var(--Darkgrayishblue);
+    font-weight: 400;
+} 
+@media screen and (min-width: 768px)  {
+    body {
+        background: url(../images/bg-pattern-top.svg) no-repeat, url(../images/bg-pattern-bottom.svg) no-repeat;
+        background-position: -100% -600px, 180% 370px;
+        background-color:var(--Darkcyan);
+    }    
+    .card {
+        width: 22rem;
+        height: 100px;
+        line-height: 4rem;
+        white-space: nowrap;
+        margin: 170px auto;
+    }
+}
