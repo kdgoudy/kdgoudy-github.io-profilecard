@@ -1,82 +1,89 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-:root {
-    --Darkcyan: hsl(185, 75%, 39%);
-    --Darkblue: hsl(229, 23%, 23%);
-    --Darkgrayishblue: hsl(227, 10%, 46%);
-    --Darkgray: hsl(0, 0%, 59%);
-}
 body {
-    background: url(../images/bg-pattern-top.svg) no-repeat, url(../images/bg-pattern-bottom.svg) no-repeat;
-    background-position: 110% -600px, 0% 370px;
-    background-color:var(--Darkcyan);
-    font-family: 'Kumbh Sans', sans-serif;
-    font-size: 18px !important;
+  background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
+  /* to remove scrollbar */
 }
+
+h6 {
+  color: hsl(229, 23%, 23%);
+  font-size: 18px;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 700;
+  margin: 10px;
+}
+
 p {
-    display: inline-block;
-    line-height: 1.5rem;
-    font-weight: bold;
-    margin: 1rem;
+  color:  hsl(227, 10%, 46%);
+  font-family: 'Kumbh Sans', sans-serif;
+
+  margin: 0;
 }
-hr {
-    margin-bottom: 1rem;
-    border: 1px solid white;
-}
-.card {
-    width: 20rem;
-    height: 100px;
-    line-height: 4rem;
-    white-space: nowrap;
-    margin: 40% auto;
-}
-.imgcontainer {
-    background: url(../images/bg-pattern-card.svg);
-    padding-top: 2.5rem;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    box-shadow: 30px 30px 30px hsla(0, 0%, 7%, 0.363);
-}
-.imgvictor {
-    display: block;
-    border-radius: 50px;
-    margin: 0 auto;
-    border: 4px solid white;
-    position: relative;
-    top: 50px;
-}
-.information {
-    line-height: 2rem;
-    display: block;
+.LondonParagraph {
+  font: 12px;
+
 }
 .text {
-    background: #ffff;
-    text-align: center;
-    padding-top: 4rem;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    box-shadow: 30px 30px 30px hsla(0, 0%, 7%, 0.363);
+  font-size: 11px;
+
 }
-.name {
-    color: var(--Darkblue);
-    font-weight: bold;
-    font-size: 1.4rem;
+
+.pattern-top {
+  position: absolute;
+  bottom: 35%;
+  right: 55%;
 }
-.age, .city, span {
-    color: var(--Darkgrayishblue);
-    font-weight: 400;
-} 
-@media screen and (min-width: 768px)  {
-    body {
-        background: url(../images/bg-pattern-top.svg) no-repeat, url(../images/bg-pattern-bottom.svg) no-repeat;
-        background-position: -100% -600px, 180% 370px;
-        background-color:var(--Darkcyan);
-    }    
-    .card {
-        width: 22rem;
-        height: 100px;
-        line-height: 4rem;
-        white-space: nowrap;
-        margin: 170px auto;
-    }
+
+.pattern-bottom {
+  position: absolute;
+  left: 55%;
+  top: 35%;
+  z-index: -1;
+}
+
+.container {
+  text-align: center;
+  vertical-align: center;
+  background-color: white;
+  width: 350px;
+  height: 380px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4%;
+  box-shadow: 0 1px 4px 1px hsl(0, 0%, 59%);
+  overflow: hidden;
+}
+
+.pattern-img {
+  width: 100%;
+}
+
+.victor-img {
+  position: absolute;
+  right: 130px;
+  top: 80px;
+  border-radius: 50%;
+  border: solid 5px white;
+}
+
+.details-container {
+  margin-top: 50px;
+}
+
+.deatils2 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.name, .age {
+  display: inline-block;
+  margin: 1px;
 }
